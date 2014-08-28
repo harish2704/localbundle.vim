@@ -12,7 +12,7 @@ com! LocalBundle call localbundle#install()
 
 fun! localbundle#init() "{{{
     if !exists('g:localbundle_dir')
-        let g:localbundle_dir = expand('$HOME/.vim/localbundle')
+        let g:localbundle_dir = expand('$HOME/.nvim/localbundle')
     else
         let g:localbundle_dir = expand(g:localbundle_dir)
     endif
@@ -31,7 +31,7 @@ fun! localbundle#install() abort "{{{
     let local_dir = g:localbundle_dir
 
     if !exists("g:bundle_dir")
-        let g:bundle_dir = expand('$HOME/.vim/bundle') 
+        let g:bundle_dir = expand('$HOME/.nvim/bundle') 
     endif
     let bundle_dir = g:bundle_dir
 
